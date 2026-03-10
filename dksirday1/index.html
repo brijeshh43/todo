@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brijesh Mandal - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s forwards;
+    }
+    section:nth-child(3) { animation-delay: 0.5s; }
+    section:nth-child(4) { animation-delay: 1s; }
+    section:nth-child(5) { animation-delay: 1.5s; }
+    section:nth-child(6) { animation-delay: 2s; }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      transition: color 0.3s;
+    }
+    h2:hover {
+      color: #f39c12;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .project {
+      margin-bottom: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brijesh Mandal</h1>
+    <div class="contact">
+      <p>📍 New Delhi</p>
+      <p>📧 brpictures2@gmail.com</p>
+      <p>📞 7827518635</p>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#objective">Career Objective</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <section id="objective">
+    <h2>Career Objective</h2>
+    <p>Seeking a dynamic role in Data Analysis, Data Science, or Software Development where I can apply my strong mathematical foundation and analytical mindset to uncover patterns, solve complex problems, and contribute to impactful, data-driven solutions.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Technology in Computer Science and Engineering</strong> - KCC Institute of Technology and Management, Greater Noida</p>
+    <p><em>Expected Graduation: 2027</em></p>
+    <ul>
+      <li>Programming languages: C, Java, Python</li>
+      <li>Working on Data Structures and Algorithms (DSA) using Java</li>
+      <li>Implementing Data Analysis projects using NumPy, Pandas, Matplotlib</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> C, Java, Python</li>
+      <li><strong>Libraries & Tools:</strong> NumPy, Pandas, Matplotlib</li>
+      <li><strong>Concepts:</strong> Data Structures and Algorithms, Data Analysis</li>
+      <li><strong>Development Areas:</strong> Software Development, Data Science, Pattern Recognition</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Flipkart Sales Data Exploration</h3>
+      <ul>
+        <li>Analyzed Flipkart product listings to understand sales patterns</li>
+        <li>Explored pricing, ratings, and customer trends using Python</li>
+        <li>Strengthened data cleaning, analysis, and storytelling skills</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Mobile App Usage & Screen Time Study</h3>
+      <ul>
+        <li>Investigated personal app usage data to uncover screen time habits</li>
+        <li>Applied time-series analysis and visualized usage spikes</li>
+        <li>Practiced NumPy, Matplotlib, and behavioral data interpretation</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Google Play Store App Review & Download Analysis</h3>
+      <ul>
+        <li>Analyzed app data to identify trends in downloads, ratings, and categories</li>
+        <li>Hands-on experience with Pandas and exploratory data analysis</li>
+        <li>Extracted insights from real-world datasets</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Brijesh Mandal | Resume Website</p>
+  </footer>
+</body>
+</html>

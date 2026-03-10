@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Login Page</title>
+</head>
+<body id="bd">
+    <h2 id="head">Login Page</h2>
+
+    <!-- Paragraph -->
+    <p id="test">Please enter your username and password to log in. If you don’t have an account, you may need to register first.</p>
+
+    <!-- Login Form -->
+    <form action="/login" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Button outside the form -->
+    <button id="bt" type="button">Click Me</button>
+</body>
+<script>
+    
+   
+    const hd=document.getElementById("bt");
+    hd.addEventListener("click" ,function(){   
+        const hdd=document.getElementById("head");
+        const bd=document.getElementById("bd");
+        hd.innerText="thik hai!";
+        bd.style.backgroundColor="black"   ;
+
+        bd.style.color="white";
+        hd.disabled=true; });
+</script>
+</html

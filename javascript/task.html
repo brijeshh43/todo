@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bt" type="button"> adi</button>
+    <h5 id="kt"> hii</h5>
+   
+    
+</body>
+<script>
+    const bt=document.getElementById("bt");
+    console.log(bt);
+    let c=0;
+    bt.addEventListener('click',function(){
+console.log("button click");
+const k=document.getElementById("kt");
+c++;
+k.innerText=c;
+
+
+
+    });
+
+</script>
+</html>
